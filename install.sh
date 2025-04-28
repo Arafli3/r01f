@@ -6,16 +6,16 @@ if ! command -v git &> /dev/null; then
     apt update && apt install -y git
 fi
 
-if [ ! -d /opt/r01f ]; then
+if [ ! -d /r01f ]; then
     echo "Cloning R01F repo..."
-    git clone https://github.com/Arafli3/r01f.git /opt/r01f
+    git clone https://github.com/Arafli3/r01f.git /r01f
 else
-    echo "Repo already exists at /opt/r01f"
+    echo "Repo already exists at /r01f"
 fi
 
-if ! grep -q "/opt/r01f/R01F" ~/.bashrc; then
+if ! grep -q "/r01f/R01F" ~/.bashrc; then
     echo "Adding launcher to .bashrc"
-    echo "bash /opt/r01f/R01F" >> ~/.bashrc
+    echo "bash /r01f/R01F" >> ~/.bashrc
 fi
 
 source ~/.bashrc
