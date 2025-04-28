@@ -8,7 +8,7 @@ fi
 
 if [ ! -d /opt/r01f ]; then
     echo "Cloning R01F repo..."
-    git clone https://github.com/kamu/r01f-vpn-tunnel.git /opt/r01f
+    git clone https://github.com/Arafli3/r01f-vpn-tunnel.git /opt/r01f
 else
     echo "Repo already exists at /opt/r01f"
 fi
