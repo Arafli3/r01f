@@ -1,0 +1,11 @@
+[Unit]
+Description=WebSocket Tunnel over Stunnel
+After=network.target
+
+[Service]
+ExecStart=/opt/r01f/tools/ws-stunnel
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
